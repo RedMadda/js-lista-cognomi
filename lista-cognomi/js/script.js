@@ -12,7 +12,7 @@ partecipanti.sort();
 
 
 for(var i=0; i < partecipanti.length; i++){
-    document.getElementById("stampa").innerHTML += i+1 + ")" + " " + partecipanti[i] + ";" + " ";
+    document.getElementById("stampa").innerHTML += i+1 + ")" + " " + partecipanti[i] + ";" + "<br />" ;
 }
 
 // scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
