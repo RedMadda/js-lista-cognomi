@@ -3,18 +3,17 @@ var partecipanti = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 // chiedi all’utente il cognome
 var cognomeUtente = prompt("Inserisci il tuo cognome, per favore!")
 var iLett = cognomeUtente.charAt(0).toUpperCase();
+// console.log(iLett);
 var restoCogn = cognomeUtente.slice(1);
 cognomeUtente = iLett + restoCogn;
-console.log(cognomeUtente);
+// console.log(cognomeUtente);
 // inseriscilo in un array con altri cognomi: 
 partecipanti.push(cognomeUtente);
 
 // stampa la lista ordinata alfabeticamente
 partecipanti.sort();
 
-
-
-for(var i=0; i < partecipanti.length; i++){
+for(var i = 0; i < partecipanti.length; i++){
     document.getElementById("stampa").innerHTML += i+1 + ")" + " " + partecipanti[i] + ";" + "<br />" ;
 }
 
